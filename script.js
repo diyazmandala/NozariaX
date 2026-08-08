@@ -26,6 +26,8 @@ function setLanguage(lang) {
 
     document.documentElement.lang = lang;
 
+    hamburgerBtn.setAttribute('aria-label', lang === 'en' ? 'Open menu' : 'Buka menu');
+
     langButtons.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
