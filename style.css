@@ -63,6 +63,44 @@ nav {
     color: #F5D07A;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: #aaaaaa;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.3s;
+}
+
+.lang-btn:hover {
+    color: #F5D07A;
+}
+
+.lang-btn.active {
+    color: #F5D07A;
+}
+
+.lang-sep {
+    color: #555555;
+    font-size: 0.85rem;
+}
+
 .hamburger {
     display: none;
     background: none;
@@ -82,6 +120,10 @@ nav {
 
     .hamburger {
         display: block;
+    }
+
+    .nav-right {
+        gap: 12px;
     }
 
     .nav-links {
