@@ -44,10 +44,10 @@ langButtons.forEach(btn => {
     btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
 });
 
-let initialLang = 'id';
+let initialLang = 'en';
 try {
-    initialLang = localStorage.getItem(LANG_STORAGE_KEY) || 'id';
+    initialLang = localStorage.getItem(LANG_STORAGE_KEY) || 'en';
 } catch (e) {
-    initialLang = 'id';
+    initialLang = 'en';
 }
 setLanguage(initialLang);
